@@ -1,80 +1,55 @@
 <div>
     <!-- Required font awesome -->
-<link
-rel="stylesheet"
-href="https://use.fontawesome.com/releases/v5.11.2/css/all.css"
-/>
-<style>
-.carousel-open:checked + .carousel-item {
-  position: static;
-  opacity: 100;
-}
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" />
+    <style>
+        .carousel-open:checked+.carousel-item {
+            position: static;
+            opacity: 100;
+        }
 
-.carousel-item {
-  -webkit-transition: opacity 0.6s ease-out;
-  transition: opacity 0.6s ease-out;
-}
+        .carousel-item {
+            -webkit-transition: opacity 0.6s ease-out;
+            transition: opacity 0.6s ease-out;
+        }
 
-#carousel-1:checked ~ .control-1,
-#carousel-2:checked ~ .control-2,
-#carousel-3:checked ~ .control-3 {
-  display: block;
-}
+        #carousel-1:checked~.control-1,
+        #carousel-2:checked~.control-2,
+        #carousel-3:checked~.control-3 {
+            display: block;
+        }
 
-.carousel-indicators {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  position: absolute;
-  bottom: 2%;
-  left: 0;
-  right: 0;
-  text-align: center;
-  z-index: 10;
-}
+        .carousel-indicators {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            position: absolute;
+            bottom: 2%;
+            left: 0;
+            right: 0;
+            text-align: center;
+            z-index: 10;
+        }
 
-#carousel-1:checked
-  ~ .control-1
-  ~ .carousel-indicators
-  li:nth-child(1)
-  .carousel-bullet,
-#carousel-2:checked
-  ~ .control-2
-  ~ .carousel-indicators
-  li:nth-child(2)
-  .carousel-bullet,
-#carousel-3:checked
-  ~ .control-3
-  ~ .carousel-indicators
-  li:nth-child(3)
-  .carousel-bullet {
-  color: #2b6cb0;
-  /*Set to match the Tailwind colour you want the active one to be */
-}
-</style>
+        #carousel-1:checked~.control-1~.carousel-indicators li:nth-child(1) .carousel-bullet,
+        #carousel-2:checked~.control-2~.carousel-indicators li:nth-child(2) .carousel-bullet,
+        #carousel-3:checked~.control-3~.carousel-indicators li:nth-child(3) .carousel-bullet {
+            color: #2b6cb0;
+            /*Set to match the Tailwind colour you want the active one to be */
+        }
 
-<div class="carousel relative rounded relative overflow-hidden shadow-xl">
-<div class="carousel-inner relative overflow-hidden w-full">
-  <!--Slide 1-->
-  <input
-    class="carousel-open"
-    type="radio"
-    id="carousel-1"
-    name="carousel"
-    aria-hidden="true"
-    hidden=""
-    checked="checked"
-  />
-  <div
-    class="carousel-item absolute opacity-0 bg-center"
-    style="
+    </style>
+
+    <div class="carousel relative rounded relative overflow-hidden shadow-xl">
+        <div class="carousel-inner relative overflow-hidden w-full">
+            <!--Slide 1-->
+            <input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden=""
+                checked="checked" />
+            <div class="carousel-item absolute opacity-0 bg-center" style="
       height: 500px;
       background-image: url('image/front1.jpg');
-    "
-  ></div>
-  <label
-    for="carousel-3"
-    class="
+    "></div>
+            <label for="carousel-3"
+                class="
       control-1
       w-10
       h-10
@@ -98,12 +73,10 @@ href="https://use.fontawesome.com/releases/v5.11.2/css/all.css"
       flex
       justify-center
       content-center
-    "
-    ><i class="fas fa-angle-left mt-3"></i
-  ></label>
-  <label
-    for="carousel-2"
-    class="
+    "><i
+                    class="fas fa-angle-left mt-3"></i></label>
+            <label for="carousel-2"
+                class="
       next
       control-1
       w-10
@@ -125,29 +98,17 @@ href="https://use.fontawesome.com/releases/v5.11.2/css/all.css"
       inset-y-0
       right-0
       my-auto
-    "
-    ><i class="fas fa-angle-right mt-3"></i
-  ></label>
+    "><i
+                    class="fas fa-angle-right mt-3"></i></label>
 
-  <!--Slide 2-->
-  <input
-    class="carousel-open"
-    type="radio"
-    id="carousel-2"
-    name="carousel"
-    aria-hidden="true"
-    hidden=""
-  />
-  <div
-    class="carousel-item absolute opacity-0 bg-center"
-    style="
+            <!--Slide 2-->
+            <input class="carousel-open" type="radio" id="carousel-2" name="carousel" aria-hidden="true" hidden="" />
+            <div class="carousel-item absolute opacity-0 bg-center" style="
       height: 500px;
-      background-image: url(assets/look/front4.jpg);
-    "
-  ></div>
-  <label
-    for="carousel-1"
-    class="
+      background-image: url('image/front2.jpg');
+    "></div>
+            <label for="carousel-1"
+                class="
       control-2
       w-10
       h-10
@@ -168,12 +129,10 @@ href="https://use.fontawesome.com/releases/v5.11.2/css/all.css"
       inset-y-0
       left-0
       my-auto
-    "
-    ><i class="fas fa-angle-left mt-3"></i
-  ></label>
-  <label
-    for="carousel-3"
-    class="
+    "><i
+                    class="fas fa-angle-left mt-3"></i></label>
+            <label for="carousel-3"
+                class="
       next
       control-2
       w-10
@@ -195,29 +154,17 @@ href="https://use.fontawesome.com/releases/v5.11.2/css/all.css"
       inset-y-0
       right-0
       my-auto
-    "
-    ><i class="fas fa-angle-right mt-3"></i
-  ></label>
+    "><i
+                    class="fas fa-angle-right mt-3"></i></label>
 
-  <!--Slide 3-->
-  <input
-    class="carousel-open"
-    type="radio"
-    id="carousel-3"
-    name="carousel"
-    aria-hidden="true"
-    hidden=""
-  />
-  <div
-    class="carousel-item absolute opacity-0"
-    style="
+            <!--Slide 3-->
+            <input class="carousel-open" type="radio" id="carousel-3" name="carousel" aria-hidden="true" hidden="" />
+            <div class="carousel-item absolute opacity-0" style="
       height: 500px;
-      background-image: url(assets/look/front3.jpg);
-    "
-  ></div>
-  <label
-    for="carousel-2"
-    class="
+      background-image: url('image/front3.jpg');
+    "></div>
+            <label for="carousel-2"
+                class="
       control-3
       w-10
       h-10
@@ -238,12 +185,10 @@ href="https://use.fontawesome.com/releases/v5.11.2/css/all.css"
       inset-y-0
       left-0
       my-auto
-    "
-    ><i class="fas fa-angle-left mt-3"></i
-  ></label>
-  <label
-    for="carousel-1"
-    class="
+    "><i
+                    class="fas fa-angle-left mt-3"></i></label>
+            <label for="carousel-1"
+                class="
       next
       control-3
       w-10
@@ -265,53 +210,43 @@ href="https://use.fontawesome.com/releases/v5.11.2/css/all.css"
       inset-y-0
       right-0
       my-auto
-    "
-    ><i class="fas fa-angle-right mt-3"></i
-  ></label>
+    "><i
+                    class="fas fa-angle-right mt-3"></i></label>
 
-  <!-- Add additional indicators for each slide-->
-  <ol class="carousel-indicators">
-    <li class="inline-block mr-3">
-      <label
-        for="carousel-1"
-        class="
+            <!-- Add additional indicators for each slide-->
+            <ol class="carousel-indicators">
+                <li class="inline-block mr-3">
+                    <label for="carousel-1"
+                        class="
           carousel-bullet
           cursor-pointer
           block
           text-4xl text-white
           hover:text-blue-700
-        "
-        >•</label
-      >
-    </li>
-    <li class="inline-block mr-3">
-      <label
-        for="carousel-2"
-        class="
+        ">•</label>
+                </li>
+                <li class="inline-block mr-3">
+                    <label for="carousel-2"
+                        class="
           carousel-bullet
           cursor-pointer
           block
           text-4xl text-white
           hover:text-blue-700
-        "
-        >•</label
-      >
-    </li>
-    <li class="inline-block mr-3">
-      <label
-        for="carousel-3"
-        class="
+        ">•</label>
+                </li>
+                <li class="inline-block mr-3">
+                    <label for="carousel-3"
+                        class="
           carousel-bullet
           cursor-pointer
           block
           text-4xl text-white
           hover:text-blue-700
-        "
-        >•</label
-      >
-    </li>
-  </ol>
-</div>
-</div>
+        ">•</label>
+                </li>
+            </ol>
+        </div>
+    </div>
     <!-- Be present above all else. - Naval Ravikant -->
 </div>

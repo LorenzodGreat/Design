@@ -52,14 +52,28 @@
                       <form action="" method="post" id="revue-form" name="revue-form" target="_blank" class=" p-1 mt-4 transition duration-500 ease-in-out transform border2 bg-gray-50 rounded-xl sm:max-w-lg sm:flex
                   ">
                         <div class="flex-1 min-w-0 revue-form-group">
+                          <div class="flex">
+                            <label for="first-name" class="sr-only">First Name</label>
+                            <input id="first-name" type="text" class=" block w-full px-5 py-3 text-base text-neutral-600 placeholder-gray-300 transition duration-500 ease-in-out transform bg-transparent border border-transparent rounded-md focus:outline-none focus:border-transparent focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-300
+                            " placeholder="Enter first name  ">
+                            
+                            <label for="last-name" class="sr-only">Last Name</label>
+                            <input id="last-name" type="text" class=" block w-full px-5 py-3 text-base text-neutral-600 placeholder-gray-300 transition duration-500 ease-in-out transform bg-transparent border border-transparent rounded-md focus:outline-none focus:border-transparent focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-300
+                            " placeholder="Enter last name  ">
+                          </div><br>
+                          <div  class="flex">
+                      <label for="phone" class="sr-only">Phone Number</label>
+                      <input id="phone" type="text" class=" block w-full px-5 py-3 text-base text-neutral-600 placeholder-gray-300 transition duration-500 ease-in-out transform bg-transparent border border-transparent rounded-md focus:outline-none focus:border-transparent focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-300
+                      " placeholder="Phone number  ">
                           <label for="member_email" class="sr-only">Email address</label>
                           <input id="cta-email" type="email" class=" block w-full px-5 py-3 text-base text-neutral-600 placeholder-gray-300 transition duration-500 ease-in-out transform bg-transparent border border-transparent rounded-md focus:outline-none focus:border-transparent focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-300
                       " placeholder="Enter your email  ">
                         </div>
-                        <div class="mt-4 sm:mt-0 sm:ml-3 revue-form-actions">
-                          <button type="submit" value="Subscribe" name="member[subscribe]" id="member_submit" class=" block w-full px-5 py-3 text-base font-medium text-white bg-red-600 border border-transparent rounded-lg shadow hover:bg-blue-500 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-300 sm:px-10
+                        <div class="sm:mt-0 sm:ml-3 revue-form-actions">
+                          <button type="submit" value="Subscribe" name="member[subscribe]" id="member_submit" class=" block w-full mt-4 px-5 py-3 text-base font-medium text-white bg-red-600 border border-transparent rounded-lg shadow hover:bg-blue-500 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-300 sm:px-10
                       "> Notify me </button>
                         </div>
+                      </div>
                       </form>
                     </div>
                   </div>
